@@ -39,6 +39,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v3.0.2
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
