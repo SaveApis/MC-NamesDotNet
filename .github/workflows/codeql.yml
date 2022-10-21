@@ -48,6 +48,10 @@ jobs:
         dotnet-version: '6.0.x'
         # Optional quality of the build. The possible values are: daily, signed, validated, preview, ga.
         dotnet-quality: 'preview'# optional
+        
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.1
+        
       
       
 
